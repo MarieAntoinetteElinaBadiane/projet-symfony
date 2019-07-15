@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{{ form_start(formEmployer)}}
+
+{{ form_row(formEmployer.matricule)}}
+{{ form_row(formEmployer.nomComplet)}}
+{{ form_row(formEmployer.datenaissance)}}
+{{ form_row(formEmployer.salai)}}
+<button type="submit">AJOUTER</button>
+{{ form_end(formEmployer)}}
+{% endblock %}

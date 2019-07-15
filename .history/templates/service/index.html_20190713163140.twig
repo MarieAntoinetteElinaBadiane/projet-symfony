@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{{ form_start(formService)}}
+
+{{ form_row(formService.libelle)}}
+<button type="submit">AJOUTER</button>
+{{ form_end(formService)}}
+{% endblock %}

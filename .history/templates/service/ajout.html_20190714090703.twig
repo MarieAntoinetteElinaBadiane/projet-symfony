@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+{% form_theme formService 'bootstrap_4_layout.html.twig' %}
+{% block body %}
+
+<h1>AJOUT DE SERVICE </h1>
+
+{{ form_start(formService)}}
+
+{{ form_row(formService.libelle)}}
+<button type="submit">
+{% if modif %}
+
+MODIFIER
+    
+{% endif %}
+
+AJOUTER
+</button>
+{{ form_end(formService)}}
+{%  endblock body %} 

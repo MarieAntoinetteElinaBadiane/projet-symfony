@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{{ form_start(formEmployer)}}
+
+{{ form_row(formEmployer.libelle)}}
+<button type="submit">AJOUTER</button>
+{{ form_end(formEmployer)}}
+{% endblock %}
